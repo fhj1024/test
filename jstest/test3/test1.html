@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        function changeImage(){
+            var str = document.getElementById("image");
+            if(str.src.match("off")){
+                str.src = "on.png";
+            }else{
+                str.src = "off.png";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <img src="off.png" id="image" onclick="changeImage()">
+</body>
+</html>

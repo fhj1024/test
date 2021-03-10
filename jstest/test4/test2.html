@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function table(row,col) {
+            document.write("<table align='center' border='1' width='500'>");
+            for (i = 1; i < row; i++) {
+                if (i % 2 != 0) {
+                    bgcolor = 'yellow';
+                } else {
+                    bgcolor = 'purple';
+                }
+                document.write("<tr bgcolor=" + bgcolor + ">");
+                for (j = 1; j < col; j++) {
+                    document.write("<td height='40'>第" + i + "行第" + j + "列</td>");
+
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        }
+        //table(10,10);
+    </script>
+
+</head>
+<body onload="table(10,10)">
+
+</body>
+</html>
